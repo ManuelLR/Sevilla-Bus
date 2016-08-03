@@ -4,7 +4,11 @@
 #include "bus_stop_list.h"
 #include "bus_stop_number_select.h"
 
+#include "app_glance.h"
+
+
 static void init(void) {
+	glance_init();
 	communication_init();
 	stop_list_init();
 
@@ -23,6 +27,9 @@ static void deinit(void) {
 	stop_list_deinit();
 
 	win_edit_deinit();
+
+	glance_deinit();
+
 }
 
 int main(void) {

@@ -51,9 +51,9 @@
       "watchface": false
     },
     "targetPlatforms": [
-      "aplite",
       "basalt",
-      "chalk"
+      "chalk",
+      "diorite"
     ],
     "capabilities": [
       "location"
